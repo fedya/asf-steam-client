@@ -18,3 +18,7 @@ How to run GUI mono application in docker?
 2. run:
 
 ```docker run -ti -env=DISPLAY --volume=/tmp/.X11-unix:/tmp/.X11-unix:rw --volume=/home/fdrt/asf-steam-client/config:/root/config --volume=/tmp/.docker.xauth:/tmp/.docker.xauth:rw --env=XAUTHORITY=/tmp/.docker.xauth asf```
+
+
+How to build container:
+```docker build --tag=asf --file Dockerfile.asf .```
