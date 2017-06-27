@@ -18,7 +18,12 @@ How to run GUI mono application in docker?
 1. unmask second CMD string and mask first
 2. run:
 
-```# docker run -ti -env=DISPLAY --volume=/tmp/.X11-unix:/tmp/.X11-unix:rw --volume=/home/fdrt/asf-steam-client/config:/root/config --volume=/tmp/.docker.xauth:/tmp/.docker.xauth:rw --env=XAUTHORITY=/tmp/.docker.xauth asf```
+```
+# docker run -ti -env=DISPLAY \
+     --volume=/tmp/.X11-unix:/tmp/.X11-unix:rw \
+     --volume=/home/fdrt/asf-steam-client/config:/root/config \
+     --volume=/tmp/.docker.xauth:/tmp/.docker.xauth:rw \
+     --env=XAUTHORITY=/tmp/.docker.xauth asf```
 
 
 How to build container:
