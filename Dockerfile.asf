@@ -1,0 +1,6 @@
+FROM mono:5.0.1.1
+ENV ASF_VERSION 2.3.2.4
+
+RUN curl  -L https://github.com/JustArchi/ArchiSteamFarm/releases/download/$ASF_VERSION/ASF.exe -o /root/ASF.exe
+
+CMD ["/usr/bin/mono","/root/ASF.exe"]
