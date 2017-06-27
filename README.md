@@ -2,7 +2,7 @@
 dockerized https://github.com/JustArchi/ArchiSteamFarm/
 
 At first you need to pull repo with default configs for ArchiSteamFarm
-````cd $HOME; git clone https://github.com/fedya/asf-steam-client.git```
+```cd $HOME; git clone https://github.com/fedya/asf-steam-client.git```
 
 Then open config/firstbot.json and replace SteamLogin and SteamPassword values with own ones
 
